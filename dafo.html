@@ -1,0 +1,719 @@
+<!DOCTYPE html><html lang="es" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>DigitalizándoT | Consultoría Pedagógica y Tecnología Educativa</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#f8f9ff", "surface-container-high": "#dce9ff", "surface-container-low": "#eff4ff", "background": "#f8f9ff", "on-error": "#ffffff", "primary-fixed-dim": "#bec6e0", "on-background": "#0b1c30", "surface-container": "#e5eeff", "surface-container-highest": "#d3e4fe", "on-surface": "#0b1c30", "secondary-fixed-dim": "#ffb2b7", "surface": "#f8f9ff", "on-tertiary-container": "#188ace", "on-secondary-fixed": "#40000d", "on-primary-container": "#7c839b", "on-secondary": "#ffffff", "on-error-container": "#93000a", "inverse-surface": "#213145", "secondary-container": "#dc2c4f", "primary": "#000000", "on-secondary-fixed-variant": "#92002a", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#001d31", "tertiary-fixed-dim": "#93ccff", "surface-dim": "#cbdbf5", "surface-variant": "#d3e4fe", "inverse-on-surface": "#eaf1ff", "tertiary-fixed": "#cce5ff", "primary-container": "#131b2e", "on-primary-fixed": "#131b2e", "on-primary": "#ffffff", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#004b73", "on-surface-variant": "#45464d", "inverse-primary": "#bec6e0", "tertiary": "#000000", "outline": "#76777d", "surface-container-lowest": "#ffffff", "outline-variant": "#c6c6cd", "secondary-fixed": "#ffdadb", "primary-fixed": "#dae2fd", "on-secondary-container": "#fffbff", "on-primary-fixed-variant": "#3f465c", "secondary": "#b90538", "surface-tint": "#565e74", "error-container": "#ffdad6", "tertiary-container": "#001d31" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "3rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "badge-code": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Inter"] }, "fontSize": { "headline-md": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-lg": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.03em", "fontWeight": "800" }], "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "badge-code": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.06em", "fontWeight": "700" }], "headline-xl": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "headline-sm": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed" style="background-color: rgb(250, 246, 247); color: rgb(16, 36, 61);"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" style="background-color: rgba(253, 246, 247, 0.92); border-bottom: 1px solid rgb(241, 213, 216);"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><a class="flex items-center gap-space-sm" data-path="inicio-identidad" href="./index.html"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBznAT7BRiyzHmURW_OplzZrouKEAJ4NTcMEXSyskMFb8Em8W84-0r7SN48wiAhMx_BujvZAmIi-aG-to8ec9cUcFkCe9dDqQAvnYZ6jW8lFwBbgCxwd1A_yCNy9LWxrc7i_QOcO99CeyBlouh2CD5qjhKWCVXfaXnKt2Oc-t_8GIk8JQp6TULnvd_PG3TaSUS9yBbb5cRCFwhhLpRsIsGDe1HvZZLfPHxvpjvIyAx9Dpco9qKNRJ4UB0esSOn-lyw8QA" class="h-10 sm:h-12 w-auto object-contain rounded-md" alt="DigitalizándoT"></a><div class="hidden xl:flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface" style="background-color: rgb(249, 213, 216); color: rgb(16, 36, 61); border: 1px solid rgb(241, 188, 194);"><span class="font-badge-code text-badge-code uppercase tracking-wider text-on-surface">Tecnología Educativa · 2.º Pedagogía (2026-2027)</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container-highest text-on-surface font-bold rounded-lg"><a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors whitespace-nowrap" data-path="inicio-identidad" href="./index.html">Inicio &amp; Identidad</a><a class="px-3 py-2 rounded-lg font-label-md text-label-md transition-colors whitespace-nowrap font-bold" data-path="justificacion-dafo" href="./dafo.html" style="background-color: rgb(229, 155, 159); color: rgb(15, 43, 70);">Justificación &amp; DAFO</a><a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors whitespace-nowrap" data-path="mision-objetivos" href="./mision.html">Misión &amp; Objetivos</a><a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors whitespace-nowrap" data-path="servicios-ia" href="./ia.html">Servicios &amp; IA</a></nav><div class="flex items-center gap-space-sm flex-shrink-0"><button class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest hover:text-on-surface transition-all whitespace-nowrap shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button" style="background-color: rgb(252, 231, 235); color: rgb(16, 36, 61); border: 1px solid rgb(241, 213, 216);">Descargar Memoria Fase 1 (PDF)</button><button class="inline-flex items-center justify-center px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all whitespace-nowrap shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button" style="background-color: rgb(212, 123, 129); color: rgb(255, 255, 255); border: 1px solid rgb(200, 105, 112);">Contacto Centros</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1" style="background-color: rgb(16, 36, 61);"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Top Academic Context Header -->
+<section class="relative w-full bg-surface-container-low px-gutter py-space-xl overflow-hidden shadow-sm">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-sm relative z-10">
+<div class="flex flex-wrap items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1 font-semibold text-secondary">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+          DigitalizándoT
+        </span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-medium">Marco Teórico &amp; Justificación</span>
+<span class="text-outline-variant">/</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-badge-code text-badge-code uppercase tracking-wider text-on-surface">Auditoría 2026-2027</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end mt-space-sm">
+<div class="lg:col-span-8 space-y-space-xs">
+<div class="inline-flex items-center gap-2 px-space-sm py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-badge-code text-badge-code uppercase tracking-wider" style="background-color: rgb(253, 242, 244); color: rgb(137, 77, 81);">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Fundamentación Bibliográfica &amp; Diagnóstico Situacional
+          </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+            Justificación Teórica y Análisis de Necesidades Educativas
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Diagnóstico contextual, evidencia empírica y sustentación científico-pedagógica que legitima la creación de la consultora <strong class="text-on-surface font-semibold">DigitalizándoT</strong> en el ecosistema educativo preuniversitario español.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-xs lg:items-end justify-center">
+<div class="px-space-md py-space-sm bg-surface-container-lowest rounded-lg shadow-sm flex items-center gap-space-sm w-full max-w-xs">
+<span class="material-symbols-outlined text-secondary text-2xl" style="color: rgb(137, 77, 81); font-variation-settings: &quot;FILL&quot; 1;">verified</span>
+<div>
+<p class="font-badge-code text-badge-code text-on-surface-variant uppercase">Estatus Académico</p>
+<p class="font-label-md text-label-md text-on-surface font-bold">Fase 1: Diagnóstico Riguroso</p>
+</div>
+</div>
+<div class="px-space-md py-space-sm bg-surface-container-highest rounded-lg flex items-center gap-space-sm w-full max-w-xs">
+<span class="material-symbols-outlined text-on-surface text-2xl">account_balance</span>
+<div>
+<p class="font-badge-code text-badge-code text-on-surface-variant uppercase">Marco Regulatorio</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold">LOMLOE · MRCDD · UE 2026</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Pillars & Autonomic Context Section -->
+<section class="max-w-7xl mx-auto w-full px-gutter py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<span class="font-badge-code text-badge-code text-secondary font-bold uppercase tracking-wider" style="color: rgb(137, 77, 81);">Tetraedro de Demanda Estructural</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">Los 4 Pilares de la Necesidad Pedagógica</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+        Datos oficiales contrastados (INE, ONTSI, UNESCO, OCDE, INTEF) que evidencian la brecha entre adquisición tecnológica y competencia crítica.
+      </p>
+</div>
+<!-- 4 Core Pillars Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-lg">
+<!-- Pilar 1: Necesidades de la Sociedad -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-2 px-space-xs py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">public</span>
+              Pilar 01 · Dimensión Social
+            </div>
+<span class="font-badge-code text-badge-code text-on-surface-variant">INE 2025 · ONTSI 2026</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Brecha de Competencia Crítica y Ética Digital
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Según los últimos datos del <strong class="text-on-surface font-semibold">INE (2025)</strong>, el 66,5% de la población dispone de habilidades digitales básicas o avanzadas; no obstante, un <strong class="text-secondary font-bold">33,5%</strong> subsiste con destrezas bajas o nulas. A pesar de la dotación millonaria del Plan Nacional de Competencias Digitales (ONTSI 2026), persiste una grave confusión entre el mero <span class="italic">“consumo utilitario de dispositivos”</span> y la verdadera gobernanza crítica de la privacidad, ciberseguridad y sesgos algorítmicos.
+          </p>
+<!-- SVG Micro Data-Viz -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between gap-space-sm mt-space-sm">
+<div class="flex items-center gap-space-sm">
+<svg class="w-12 h-12 flex-shrink-0 -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="66.5, 100" stroke-linecap="round" stroke-width="3.8" style="stroke: rgb(137, 77, 81);"></path>
+</svg>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">66,5% vs 33,5%</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Básico/Avanzado vs. Desconectados funcionales</p>
+</div>
+</div>
+<div class="text-right flex flex-col justify-center">
+<span class="font-badge-code text-badge-code px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-bold">ALERTA SOCIAL</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Fuente: ONTSI / The Objective (2026)</span>
+<span class="text-secondary font-semibold flex items-center gap-1">Inversión Fondos UE <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+<!-- Pilar 2: Necesidades del Alumnado -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-2 px-space-xs py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">psychology</span>
+              Pilar 02 · Dimensión Discente
+            </div>
+<span class="font-badge-code text-badge-code text-on-surface-variant">UNESCO 2025 · OCDE 2026</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Pensamiento Crítico ante Sesgos e IA Generativa
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            La <strong class="text-on-surface font-semibold">UNESCO (2025)</strong> y los informes <strong class="text-on-surface font-semibold">OCDE (2026)</strong> reclaman con urgencia una alfabetización mediática informacional real. Los estudiantes de Primaria y Secundaria dominan la interfaz táctil pero adolecen de criterios para detectar <span class="italic">“fake news”</span>, entender las alucinaciones algorítmicas y evitar la dependencia acrítica de la IA generativa, comprometiendo los descriptores operativos del Perfil de Salida (LOMLOE).
+          </p>
+<!-- Descriptive Indicators -->
+<div class="grid grid-cols-2 gap-space-xs mt-space-sm">
+<div class="p-space-xs rounded bg-surface-container-low flex flex-col">
+<span class="font-badge-code text-badge-code text-on-tertiary-container font-bold uppercase">Competencia CD1-CD3</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Búsqueda crítica y veracidad</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low flex flex-col">
+<span class="font-badge-code text-badge-code text-secondary font-bold uppercase" style="color: rgb(137, 77, 81);">Reto 2026-2027</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Alucinación y sesgo de género en IA</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Alineado con Perfil de Salida LOMLOE</span>
+<span class="text-on-tertiary-container font-semibold flex items-center gap-1">Protocolo Ético Escolar <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+<!-- Pilar 3: Necesidades del Profesorado -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-2 px-space-xs py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">school</span>
+              Pilar 03 · Dimensión Docente
+            </div>
+<span class="font-badge-code text-badge-code text-secondary font-bold" style="color: rgb(137, 77, 81);">OBLIGATORIEDAD FEB 2026</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Urgencia de Acreditación MRCDD y Capacitación en IA
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Desde febrero de 2026, el Consejo de la UE y el INTEF han estipulado la <strong class="text-on-surface font-semibold">obligatoriedad de formación específica en Inteligencia Artificial</strong> para el cuerpo docente. Paradójicamente, los estudios revelan que <strong class="text-secondary font-bold">menos del 10% del profesorado</strong> cuenta con preparación pedagógica en IA, a pesar de que más del 35% de las aulas de Secundaria ya recurren a ella habitualmente.
+          </p>
+<!-- Micro Metric Bar -->
+<div class="bg-surface-container-low p-space-sm rounded-lg space-y-2">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Docentes usando IA en aula: ~35%</span>
+<span class="text-secondary font-bold">Formación específica: &lt;10%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex">
+<div class="bg-on-tertiary-container h-full" style="width: 35%"></div>
+<div class="bg-secondary h-full" style="width: 10%; background-color: rgb(137, 77, 81);"></div>
+</div>
+<p class="font-badge-code text-badge-code text-on-surface-variant">
+              Caso de éxito: Murcia acreditó 24.000 docentes en MRCDD (INTEF 2026 “Pensar, crear e innovar”).
+            </p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Marco MRCDD (Resol. MEFP)</span>
+<span class="text-secondary font-semibold flex items-center gap-1">Acompañamiento A1-C2 <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+<!-- Pilar 4: Necesidades de los Centros Educativos -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-2 px-space-xs py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">domain</span>
+              Pilar 04 · Dimensión Institucional
+            </div>
+<span class="font-badge-code text-badge-code text-on-surface-variant">Plan Acción UE 2021-2027</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+            Las 4 Dimensiones del Plan Digital de Centro (PDC)
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            La Comisión Europea y la normativa estatal exigen a cada centro un Plan Digital holístico que resuelva de manera articulada cuatro frentes interconectados, superando el error histórico de considerar la digitalización como una simple renovación de hardware.
+          </p>
+<!-- 4 Dimensions Mini Badges Grid -->
+<div class="grid grid-cols-2 gap-2 mt-space-sm">
+<div class="p-2 rounded bg-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">devices</span>
+<span class="font-label-sm text-label-sm text-on-surface">1. Infraestructura / Red</span>
+</div>
+<div class="p-2 rounded bg-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">auto_stories</span>
+<span class="font-label-sm text-label-sm text-on-surface">2. Pedagogía LOMLOE</span>
+</div>
+<div class="p-2 rounded bg-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">security</span>
+<span class="font-label-sm text-label-sm text-on-surface">3. Ciberseguridad/RGPD</span>
+</div>
+<div class="p-2 rounded bg-surface-container-high/60 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">diversity_3</span>
+<span class="font-label-sm text-label-sm text-on-surface">4. Equidad &amp; DUA</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Fuente: El Español (2026) / CE</span>
+<span class="text-on-surface font-semibold flex items-center gap-1">Auditoría Integral PDC <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+</div>
+<!-- Contexto Autonómico Andalucía Accent Banner -->
+<div class="w-full rounded-xl bg-surface-container p-space-lg shadow-sm flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-2 px-space-xs py-1 rounded bg-surface-container-lowest font-badge-code text-badge-code uppercase tracking-wider text-on-surface font-bold">
+<span class="material-symbols-outlined text-[14px] text-secondary">explore</span>
+          Contexto Territorial Prioritario: Andalucía 2026-2027
+        </div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+          Despliegue de los Procedimientos B1-C1 y Red de Asesorías ATI 4.0
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          En la Comunidad Autónoma de Andalucía, los decretos de 2026 han abierto vías extraordinarias para la consolidación de los niveles B1 y C1 en competencia digital mediante evaluación colegiada. La implementación del programa <strong class="text-on-surface font-semibold">Código Escuela 4.0</strong> y la actuación de las <strong class="text-on-surface font-semibold">Asesorías Técnicas de Innovación (ATI 4.0)</strong> en los CEPs demandan consultorías externas capaces de ofrecer acompañamiento técnico-pedagógico in situ y no solo paquetes formativos enlatados.
+        </p>
+</div>
+<div class="flex-shrink-0 flex flex-col sm:flex-row lg:flex-col gap-space-xs w-full lg:w-auto">
+<div class="px-space-md py-space-sm bg-surface-container-lowest rounded-lg shadow-sm text-center">
+<p class="font-badge-code text-badge-code text-secondary uppercase font-bold">Convocatoria Activa</p>
+<p class="font-label-md text-label-md text-on-surface font-bold">Acreditación Docente B1-C1</p>
+</div>
+<div class="px-space-md py-space-sm bg-surface-container-high rounded-lg text-center">
+<p class="font-badge-code text-badge-code text-on-surface uppercase">Referencia BOJA</p>
+<p class="font-label-sm text-label-sm text-on-surface font-medium">Instrucciones D.G. Formación</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete Interactive Strategic DAFO Matrix -->
+<section class="w-full bg-surface-container-low/70 py-space-xl px-gutter shadow-inner">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<!-- Section Intro & Filter Controls -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="inline-flex items-center gap-2 text-secondary font-badge-code text-badge-code uppercase tracking-wider font-bold" style="color: rgb(16, 36, 61);">
+<span class="material-symbols-outlined text-[16px]">grid_view</span>
+            Análisis Estratégico Institucional
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold mt-1">
+            Matriz DAFO Integral de DigitalizándoT
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Evaluación cruzada de variables internas (competencias pedagógicas vs. juventud empresarial) y externas (expansión IA vs. inercias del sistema).
+          </p>
+</div>
+<!-- Filter / Filter Pills for Interactive Matrix -->
+<div class="inline-flex p-1 bg-surface-container-high rounded-lg gap-1 self-start md:self-auto" id="dafo-filter-controls">
+<button class="dafo-btn active px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold transition-all bg-surface text-on-surface shadow-sm" onclick="filterDafo('all')" type="button" style="background-color: rgb(16, 36, 61); color: rgb(255, 255, 255);">
+            Ver Todos (4)
+          </button>
+<button class="dafo-btn px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all" onclick="filterDafo('internos')" type="button">
+            Internos (F · D)
+          </button>
+<button class="dafo-btn px-3 py-1.5 rounded-md font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all" onclick="filterDafo('externos')" type="button">
+            Externos (O · A)
+          </button>
+</div>
+</div>
+<!-- The 4 Quadrants -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md" id="dafo-grid">
+<!-- FORTALEZAS (F) -->
+<div class="dafo-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-md" data-origin="interno" style="background-color: rgb(253, 242, 244); border: 1px solid rgb(243, 212, 215);">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-surface font-headline-sm">F</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Fortalezas</h3>
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase">Factores Internos · Positivos</span>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded-full bg-surface-container font-badge-code text-badge-code uppercase tracking-wider text-on-surface font-semibold">Ventaja Competitiva</span>
+</div>
+<ul class="space-y-space-sm pt-space-xs">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Especialización pedagógica auténtica:</strong> Fundada por graduadas en Pedagogía formadas específicamente en Tecnología Educativa, anteponiendo la didáctica al consumo técnico.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Integración del modelo TPACK:</strong> Dominio de la intersección entre Conocimiento Tecnológico, Pedagógico y Disciplinar (Mishra &amp; Koehler, 2006).
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Alineación estricta MRCDD (A1-C2):</strong> Itinerarios modulares adaptados a las exigencias normativas del Ministerio de Educación y de las CCAA.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Acompañamiento post-formación:</strong> Mentoría continua y resolución de incidencias en aula, evitando el abandono de los planes de innovación.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Flexibilidad metodológica b-learning y creación propia DUA:</strong> Diseño de recursos universales accesibles para atención a la diversidad.
+                </span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Impacto estratégico: MÁXIMO</span>
+<span class="font-badge-code text-badge-code text-secondary font-bold uppercase">Nivel de Solvencia 94%</span>
+</div>
+</div>
+<!-- OPORTUNIDADES (O) -->
+<div class="dafo-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-md" data-origin="externo">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-surface font-headline-sm">O</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Oportunidades</h3>
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase">Factores Externos · Positivos</span>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded-full bg-surface-container font-badge-code text-badge-code uppercase tracking-wider text-on-surface font-semibold">Ventana de Mercado</span>
+</div>
+<ul class="space-y-space-sm pt-space-xs">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">trending_up</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Crecimiento masivo e irrupción de IA generativa:</strong> Demanda récord por parte de claustros que desconocen cómo integrar ChatGPT, Claude y Copilot en el diseño curricular LOMLOE.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">trending_up</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Obligatoriedad formativa europea 2026:</strong> Directiva comunitaria del Consejo de la UE que compele a los centros públicos y concertados a capacitar formalmente a su plantilla docente.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">trending_up</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Inyección de fondos europeos (Plan DigEdu 2026):</strong> Presupuestos específicos para consultoría, capacitación tecnopedagógica y planes de transformación.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">trending_up</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Convocatorias ATI 4.0 y STEAM en Andalucía:</strong> Necesidad urgente de colaboración técnica en los centros de profesorado andaluces.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">trending_up</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Auge del modelo e-learning institucional:</strong> Receptividad hacia formaciones micro-credenciales y recursos modulares descargables.
+                </span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Potencial de expansión: MUY ALTO</span>
+<span class="font-badge-code text-badge-code text-on-surface font-bold uppercase">Horizonte 2026-2029</span>
+</div>
+</div>
+<!-- DEBILIDADES (D) -->
+<div class="dafo-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-md" data-origin="interno">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-surface font-headline-sm">D</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Debilidades</h3>
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase">Factores Internos · A Mitigar</span>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded-full bg-surface-container font-badge-code text-badge-code uppercase tracking-wider text-on-surface font-semibold">Gestión de Riesgo</span>
+</div>
+<ul class="space-y-space-sm pt-space-xs">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">info</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Empresa de nueva creación sin historial contractual:</strong> Ausencia de cartera histórica consolidada en contratación pública y homologaciones de la administración.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">info</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Dependencia operativa del equipo promotor:</strong> La producción pedagógica, evaluación y docencia recae inicialmente en las tres pedagogas fundadoras (Raya, Montes, Ocaña).
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">info</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Inversión inicial intensiva:</strong> Elevado coste temporal y financiero en creación de plataforma LMS propia, prototipado de cursos y campañas de captación digital.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">info</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Escalabilidad geográfica presencial limitada:</strong> La fase de lanzamiento se circunscribe de forma preferente a Andalucía Oriental y central.
+                </span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Contramedida: Fases 1 a 6 estandarizadas</span>
+<span class="font-badge-code text-badge-code text-on-surface font-bold uppercase">Plan de Contingencia</span>
+</div>
+</div>
+<!-- AMENAZAS (A) -->
+<div class="dafo-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between transition-all hover:shadow-md" data-origin="externo">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold text-on-surface font-headline-sm">A</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Amenazas</h3>
+<span class="font-badge-code text-badge-code text-on-surface-variant uppercase">Factores Externos · Entorno</span>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded-full bg-surface-container font-badge-code text-badge-code uppercase tracking-wider text-on-surface font-semibold">Resiliencia</span>
+</div>
+<ul class="space-y-space-sm pt-space-xs">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">warning</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Plataformas masivas 'low-cost':</strong> Agencias de formación masiva que ofrecen cursos automatizados sin feedback pedagógico ni adaptación al aula.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">warning</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Grandes corporaciones tecnológicas (Big Tech):</strong> Programas de certificación corporativa que imponen ecosistemas propietarios cerrados.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">warning</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Dispersión de recursos gratuitos:</strong> Saturación de vídeos y webinars desestructurados en redes que generan infoxicación docente.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">warning</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Resistencia al cambio metodológico docente:</strong> Fatiga en claustros tras sucesivas reformas normativas y digitalizaciones apresuradas.
+                </span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5">warning</span>
+<span class="font-body-md text-body-md text-on-surface">
+<strong class="font-semibold text-on-surface">Tecnocentrismo ingenuo:</strong> Creencia extendida de que digitalizar un centro consiste simplemente en dotar de pantallas interactivas y tabletas.
+                </span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Blindaje: Pedagogía crítica y rigurosa</span>
+<span class="font-badge-code text-badge-code text-secondary font-bold uppercase">Prioridad Estratégica</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Deep-Dive: Theoretical Framework Validation -->
+<section class="max-w-7xl mx-auto w-full px-gutter py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 space-y-space-md">
+<span class="font-badge-code text-badge-code text-secondary font-bold uppercase tracking-wider">Fundamento Científico</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          El Modelo TPACK como Eje Articulador
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Nuestra justificación se fundamenta en la investigación seminal de Mishra &amp; Koehler (2006). DigitalizándoT no promueve la tecnología per se, sino la intersección dinámica donde confluyen el contenido curricular concreto, las metodologías didácticas activas (ABP, cooperativo, DUA) y las herramientas tecnológicas.
+        </p>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">01</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Contenido Curricular (CK): LOMLOE y Descriptores de Etapa.</span>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">02</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Pedagogía Situada (PK): Metodologías activas inclusivas y DUA.</span>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">03</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Tecnología Crítica (TK): IA ética, plataformas seguras y software libre.</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-badge-code text-badge-code uppercase tracking-wider text-on-surface-variant font-bold">Diagrama Operativo de Intersección</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-badge-code text-badge-code text-on-surface">Mishra &amp; Koehler (2006)</span>
+</div>
+<div class="w-full aspect-[16/10] bg-surface-container-low rounded-xl relative flex items-center justify-center p-space-md overflow-hidden">
+<!-- Venn SVG abstraction under 2KB -->
+<svg class="w-full h-full max-w-md text-on-surface" viewBox="0 0 320 240">
+<circle class="fill-surface-container-high/60" cx="160" cy="95" r="75"></circle>
+<circle class="fill-secondary-fixed/50" cx="110" cy="155" r="75" style="fill: rgb(229, 155, 159); fill-opacity: 0.5;"></circle>
+<circle class="fill-surface-container-highest/70" cx="210" cy="155" r="75"></circle>
+<!-- Labels -->
+<text class="font-badge-code text-[11px] font-bold fill-on-surface" text-anchor="middle" x="160" y="65">Pedagogía (PK)</text>
+<text class="font-badge-code text-[11px] font-bold fill-on-surface" text-anchor="middle" x="80" y="185">Tecnología (TK)</text>
+<text class="font-badge-code text-[11px] font-bold fill-on-surface" text-anchor="middle" x="240" y="185">Contenido (CK)</text>
+<text class="font-headline-sm text-[13px] font-extrabold fill-secondary" text-anchor="middle" x="160" y="145">TPACK</text>
+<text class="font-badge-code text-[8px] uppercase tracking-wider fill-on-surface" text-anchor="middle" x="160" y="160">DigitalizándoT</text>
+</svg>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm italic text-center">
+            “La integración efectiva de la tecnología requiere una comprensión sensible de las complejas relaciones entre personas, contenidos y tecnologías.”
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Image Break with Pedagogical Context -->
+<section class="max-w-7xl mx-auto w-full px-gutter mb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-sm h-72">
+<img class="w-full h-full object-cover" data-alt="Modern Spanish secondary school classroom with diverse students collaborating using digital tablets, guided by an engaged female pedagogue standing beside interactive display showing educational workflow, bright natural sunlight, clean minimalist Scandinavian-inspired educational interior, warm rose accents, academic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaG9qYxGWPf2V0Q4F4B_91-Vx65QINLc2a7UFs1Stjw2N8ujRi-AeRzsRFZUSZGQHXsSg4hXQKdDSNmr-yeqndrQWMFemmo9FaJFj_NTSftR6AjIXASC9_ec-OEhDyVCEdI71wjqUlbqCfqnpOM2eMTQTzxcJkW_JEoU47VvH2i4WbNvQa31jHkSXSPZ8fOY8eq2YDi8JYp7RFjnpdkiC5YvCMNl-7ctYCi6diWpPYPXFWfmU_xsDs">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<span class="font-badge-code text-badge-code uppercase tracking-wider text-secondary-fixed">Práctica Transformadora</span>
+<h4 class="font-headline-md text-headline-md font-bold">Diagnóstico In Situ en Aulas Andaluzas</h4>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container shadow-sm h-72">
+<img class="w-full h-full object-cover" data-alt="Detailed close up of school leadership team and three pedagogical consultants analyzing institutional data on laptops and printed strategic diagrams, clean modern faculty boardroom with natural oak furniture, notebooks with MRCDD indicators, architectural precision, soft ambient illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0mVK2QYyT58d2Wb_Pf6ofF1muoD_xnVluGxsCBDsvamjuQAdTD03-WH57ekSE8dYqQicQcSRmpDsuSfnEebV88CD4NKISTY_vrzTUv6h-XWAmbAXyeoB3el3GSg3-eXcSK7WivaAX1yyusdqoOAO1Q4C1-hpauM8bACVd4-N8sBNTH7OlSPxu7CyO_WnInOpnyphM-Nw1YiJ8lwu2DqYX2JFRHgoBtK_emDl05ITS8OXyjblmYcM2">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<span class="font-badge-code text-badge-code uppercase tracking-wider text-surface-container-high">Auditoría Institucional</span>
+<h4 class="font-headline-md text-headline-md font-bold">Alineación del PDC con Decretos 2026</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Official Bibliographic Repository (APA 7th Format) -->
+<section class="w-full bg-surface-container-lowest py-space-xl px-gutter shadow-sm">
+<div class="max-w-7xl mx-auto space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<span class="font-badge-code text-badge-code text-secondary font-bold uppercase tracking-wider">Garantía de Rigor Investigador</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+            Repositorio Bibliográfico Oficial y Normativa
+          </h2>
+</div>
+<button class="inline-flex items-center gap-2 px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+          Descargar Fuentes en RIS/BibTeX
+        </button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Las propuestas de actuación y análisis de DigitalizándoT cumplen estrictamente los criterios de validación empírica según la norma APA (7.ª edición) y las resoluciones administrativas vigentes:
+      </p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md pt-space-xs">
+<!-- Cita 1: UNESCO -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-badge-code text-badge-code px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-bold uppercase">UNESCO 2025</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+<strong>UNESCO. (2025).</strong> <span class="italic">Guidance for generative AI in education and research: Critical pedagogical foundations</span>. Paris: United Nations Educational, Scientific and Cultural Organization.
+            </p>
+</div>
+<span class="text-secondary font-label-sm text-label-sm font-semibold mt-space-sm flex items-center gap-1">
+            Revisión Ética Global <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</span>
+</div>
+<!-- Cita 2: OCDE -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-badge-code text-badge-code px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-bold uppercase">OCDE 2026</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+<strong>OECD. (2026).</strong> <span class="italic">Digital Education Outlook 2026: Pushing the frontiers with Artificial Intelligence, blockchain and robots</span>. OECD Publishing, Paris.
+            </p>
+</div>
+<span class="text-secondary font-label-sm text-label-sm font-semibold mt-space-sm flex items-center gap-1">
+            Evaluación de Impacto <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</span>
+</div>
+<!-- Cita 3: INTEF -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-badge-code text-badge-code px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-bold uppercase">INTEF 2026</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+<strong>INTEF. (2026).</strong> <span class="italic">Pensar, crear e innovar en tiempos de IA: Marco de referencia para la actualización docente</span>. Ministerio de Educación, Formación Profesional y Deportes, Madrid.
+            </p>
+</div>
+<span class="text-secondary font-label-sm text-label-sm font-semibold mt-space-sm flex items-center gap-1">
+            Marco MRCDD Estatal <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</span>
+</div>
+<!-- Cita 4: INE & ONTSI -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-badge-code text-badge-code px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-bold uppercase">INE &amp; ONTSI 2025/2026</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+<strong>INE &amp; ONTSI. (2025/2026).</strong> <span class="italic">Encuesta sobre equipamiento y uso de tecnologías de información y comunicación en los hogares y centros educativos de España</span>. Madrid: INE.
+            </p>
+</div>
+<span class="text-secondary font-label-sm text-label-sm font-semibold mt-space-sm flex items-center gap-1">
+            Datos Estadísticos Base <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</span>
+</div>
+<!-- Cita 5: BOJA & Autonómico -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-badge-code text-badge-code px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-bold uppercase">BOJA 2026</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+<strong>Consejería de Desarrollo Educativo y F.P. (2026).</strong> <span class="italic">Instrucciones relativas a la acreditación de los niveles de competencia digital docente B1 y C1 en Andalucía</span>. BOJA n.º 42.
+            </p>
+</div>
+<span class="text-secondary font-label-sm text-label-sm font-semibold mt-space-sm flex items-center gap-1">
+            Disposición Autonómica <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</span>
+</div>
+<!-- Cita 6: TPACK Mishra & Koehler -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-badge-code text-badge-code px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-bold uppercase">Mishra &amp; Koehler 2006</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+<strong>Mishra, P., &amp; Koehler, M. J. (2006).</strong> Technological Pedagogical Content Knowledge: A Framework for Teacher Knowledge. <span class="italic">Teachers College Record</span>, 108(6), 1017–1054.
+            </p>
+</div>
+<span class="text-secondary font-label-sm text-label-sm font-semibold mt-space-sm flex items-center gap-1">
+            Fundación Epistemológica <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA: Transition to Objectives & Service Architecture -->
+<section class="max-w-7xl mx-auto w-full px-gutter py-space-xl">
+<div class="w-full rounded-2xl bg-surface-container-high p-space-lg lg:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs text-center md:text-left">
+<span class="font-badge-code text-badge-code uppercase tracking-wider text-secondary font-bold">Del Diagnóstico a la Acción</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          ¿Cómo responde DigitalizándoT a estas necesidades?
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+          Conoce nuestra formulación estratégica de Misión, Visión y Objetivos Operativos cuantificables para centros de Educación Primaria y Secundaria.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm flex-shrink-0">
+<a class="px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container transition-all flex items-center gap-2 shadow-sm" data-path="mision-objetivos" href="./mision.html" style="background-color: rgb(16, 36, 61); color: rgb(255, 255, 255);">
+<span class="">Ir a Misión &amp; Objetivos</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all" data-path="servicios-ia" href="./ia.html">
+          Ver Catálogo de Servicios &amp; IA
+        </a>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript for DAFO Dynamic Filtering -->
+<script>
+    function filterDafo(filterType) {
+      const cards = document.querySelectorAll('.dafo-card');
+      const buttons = document.querySelectorAll('.dafo-btn');
+
+      // Update button styling
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-surface', 'text-on-surface', 'shadow-sm', 'active');
+        btn.classList.add('text-on-surface-variant');
+      });
+
+      if (event && event.currentTarget) {
+        event.currentTarget.classList.add('bg-surface', 'text-on-surface', 'shadow-sm', 'active');
+        event.currentTarget.classList.remove('text-on-surface-variant');
+      }
+
+      // Filter cards
+      cards.forEach(card => {
+        const origin = card.getAttribute('data-origin');
+        if (filterType === 'all') {
+          card.style.display = 'flex';
+          card.style.opacity = '1';
+        } else if (filterType === 'internos') {
+          if (origin === 'interno') {
+            card.style.display = 'flex';
+            card.style.opacity = '1';
+          } else {
+            card.style.display = 'none';
+          }
+        } else if (filterType === 'externos') {
+          if (origin === 'externo') {
+            card.style.display = 'flex';
+            card.style.opacity = '1';
+          } else {
+            card.style.display = 'none';
+          }
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.03)]" style="background-color: rgb(253, 246, 247); border-top: 1px solid rgb(241, 213, 216);"><div class="max-w-7xl mx-auto px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBznAT7BRiyzHmURW_OplzZrouKEAJ4NTcMEXSyskMFb8Em8W84-0r7SN48wiAhMx_BujvZAmIi-aG-to8ec9cUcFkCe9dDqQAvnYZ6jW8lFwBbgCxwd1A_yCNy9LWxrc7i_QOcO99CeyBlouh2CD5qjhKWCVXfaXnKt2Oc-t_8GIk8JQp6TULnvd_PG3TaSUS9yBbb5cRCFwhhLpRsIsGDe1HvZZLfPHxvpjvIyAx9Dpco9qKNRJ4UB0esSOn-lyw8QA" class="h-12 w-auto object-contain rounded-md shadow-sm bg-white p-1" alt="DigitalizándoT"></div><p class="font-body-md text-body-md text-on-surface italic font-medium">"Pedagogía que transforma, tecnología que conecta"</p><p class="font-body-sm text-body-sm text-on-surface-variant">Consultora de Innovación Tecno-Pedagógica fundada por estudiantes de 2.º Grado en Pedagogía.</p></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Equipo Pedagógico</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="">María Raya · Coordinación Pedagógica</li><li class="">Alba Montes · Evaluación &amp; Marcos Competenciales</li><li class="">Carmen Ocaña · Diseño Tecnopedagógico e IA</li><li class="pt-space-xs text-on-surface font-label-sm text-label-sm uppercase tracking-wider">2.º Grado en Pedagogía</li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Marcos Regulatorios</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" href="#">Marco DigCompEdu (Unión Europea)</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">MRCDD (Resolución MEFP)</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Plan Digital de Centro (Plan DigEdu 2026)</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Programa Código Escuela 4.0</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Modelo TPACK (Mishra &amp; Koehler)</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Canales &amp; Comunicación</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" href="#">TikTok: @DigitalizandoT_edu</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Instagram: @digitalizandot.pedagogia</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">X/Twitter: @DigitalizandoT</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">consultoria@digitalizandot.edu</a></li></ul><div class="pt-space-xs"><span class="inline-block px-space-sm py-space-xs rounded bg-surface-container font-badge-code text-badge-code text-on-surface uppercase">Proyecto Académico 2026-2027</span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><p class="">© 2026-2027 DigitalizándoT. Asignatura Tecnología Educativa · Trabajo Académico de Consultoría.</p><div class="flex items-center gap-space-md"><span class="text-on-surface font-medium">María Raya · Alba Montes · Carmen Ocaña</span></div></div></div></footer>
+
+</body></html>
