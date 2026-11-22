@@ -22,14 +22,14 @@
           </p>
 <!-- Dual CTAs -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch gap-3 w-full mb-10">
-<a class="w-full inline-flex items-center justify-center text-center gap-space-xs px-4 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container transition-all shadow-md group" data-path="servicios-ia" href="./ia.html" style="background-color: rgb(212, 123, 129); color: rgb(255, 255, 255); box-shadow: rgba(212, 123, 129, 0.35) 0px 4px 14px;">
-<span class="">Explorar Catálogo de Servicios</span>
-<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-<a class="w-full inline-flex items-center justify-center text-center gap-space-xs px-4 py-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" data-path="justificacion-dafo" href="./dafo.html" style="background-color: rgb(255, 255, 255); color: rgb(16, 36, 61); border: 1px solid rgb(241, 213, 216);">
-<span class="material-symbols-outlined text-[18px] text-secondary">analytics</span>
-<span class="">Ver Justificación &amp; DAFO</span>
-</a>
+<button id="open-podcast" class="w-full inline-flex items-center justify-center text-center gap-space-xs px-4 py-3.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container transition-all shadow-md group" type="button" aria-haspopup="dialog" aria-controls="podcast-modal" style="background-color: rgb(212, 123, 129); color: rgb(255, 255, 255); box-shadow: rgba(212, 123, 129, 0.35) 0px 4px 14px;">
+<span class="material-symbols-outlined text-[18px]">headphones</span>
+<span class="">Escuchar podcast</span>
+</button>
+<button id="open-anuncio" class="w-full inline-flex items-center justify-center text-center gap-space-xs px-4 py-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" type="button" aria-haspopup="dialog" aria-controls="anuncio-modal" style="background-color: rgb(255, 255, 255); color: rgb(16, 36, 61); border: 1px solid rgb(241, 213, 216);">
+ <span class="material-symbols-outlined text-[18px] text-secondary">play_circle</span>
+ <span>Ver anuncio</span>
+</button>
 <button id="open-infografia" class="w-full inline-flex items-center justify-center text-center gap-space-xs px-4 py-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" type="button" aria-haspopup="dialog" aria-controls="infografia-modal" style="background-color: rgb(255, 255, 255); color: rgb(16, 36, 61); border: 1px solid rgb(241, 213, 216);">
  <span class="material-symbols-outlined text-[18px] text-secondary">image</span>
  <span>Ver infografía</span>
@@ -59,7 +59,12 @@
 <!-- Main Hero Graphic Container -->
 <div class="relative rounded-xl overflow-hidden shadow-xl bg-surface-container-lowest">
 <div class="relative h-72 sm:h-80 w-full overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A modern, brightly lit university pedagogy lab in Spain with three female educational technology consultants in their early twenties, collaborating over digital tablets and interactive school blueprints, soft natural light, warm humanist touches, clean professional educational setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOnc4KNevCD1Y7_28R1_YanX_UGhbEhxErjOH9LqlFHpYdf1-olj_9c-wbpsgvjk8V6sCSPqMQ2JevfDtdIC8wM0qKbzYtHnMjRc_nki-_-ZUFwYr0QTglgJFamYYNvT3bHnAlPKnbAkQZb89GiS7yk2SWA0JItl6nzRox-kcfZZzYMsegMpF2PyH-lO7CAHAV05fnn8pVvie8zeY-jfCgkYETUTGf0blQhDf5WURL2x2Uz1t2WdSl">
+<a href="https://orbix360.com/v/iwh8UOHgVyahPJnhWOmRSDq5JqX2/5862150243352576?edit=yes" target="_blank" rel="noopener noreferrer" class="group block h-full w-full" aria-label="Abrir recorrido virtual Orbix360">
+<video class="w-full h-full object-cover" autoplay muted loop playsinline preload="auto" aria-label="Vista previa en vídeo del recorrido Orbix360">
+<source src=".\orbix360-tour-video.mp4" type="video/mp4">
+Tu navegador no puede reproducir el vídeo. <span class="underline">Abrir recorrido Orbix360</span>.
+</video>
+</a>
 <div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
 <!-- Floating Brand Pill on Graphic -->
 <div class="absolute top-4 left-4 flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md shadow-sm">
@@ -75,6 +80,8 @@
                   Equipo Fundador · María Raya, Alba Montes, Carmen Ocaña
                 </p>
 </div>
+<!-- Enlace transparente por encima de las capas visuales para que toda la imagen sea pulsable -->
+<a href="https://orbix360.com/v/iwh8UOHgVyahPJnhWOmRSDq5JqX2/5862150243352576?edit=yes" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-20 block cursor-pointer" aria-label="Abrir recorrido virtual Orbix360 en una nueva pestaña"></a>
 </div>
 <!-- Key Metric Counters Bento Strip -->
 <div class="grid grid-cols-2 gap-space-xs p-space-sm bg-surface-container-low">
@@ -492,6 +499,42 @@
 </div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.03)]" style="background-color: rgb(253, 246, 247); border-top: 1px solid rgb(241, 213, 216);"><div class="max-w-7xl mx-auto px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBznAT7BRiyzHmURW_OplzZrouKEAJ4NTcMEXSyskMFb8Em8W84-0r7SN48wiAhMx_BujvZAmIi-aG-to8ec9cUcFkCe9dDqQAvnYZ6jW8lFwBbgCxwd1A_yCNy9LWxrc7i_QOcO99CeyBlouh2CD5qjhKWCVXfaXnKt2Oc-t_8GIk8JQp6TULnvd_PG3TaSUS9yBbb5cRCFwhhLpRsIsGDe1HvZZLfPHxvpjvIyAx9Dpco9qKNRJ4UB0esSOn-lyw8QA" class="h-12 w-auto object-contain rounded-md shadow-sm bg-white p-1" alt="DigitalizándoT"></div><p class="font-body-md text-body-md text-on-surface italic font-medium">"Pedagogía que transforma, tecnología que conecta"</p><p class="font-body-sm text-body-sm text-on-surface-variant">Consultora de Innovación Tecno-Pedagógica fundada por estudiantes de 2.º Grado en Pedagogía.</p></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Equipo Pedagógico</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="">María Raya · Coordinación Pedagógica</li><li class="">Alba Montes · Evaluación &amp; Marcos Competenciales</li><li class="">Carmen Ocaña · Diseño Tecnopedagógico e IA</li><li class="pt-space-xs text-on-surface font-label-sm text-label-sm uppercase tracking-wider">2.º Grado en Pedagogía</li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Marcos Regulatorios</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" href="#">Marco DigCompEdu (Unión Europea)</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">MRCDD (Resolución MEFP)</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Plan Digital de Centro (Plan DigEdu 2026)</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Programa Código Escuela 4.0</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Modelo TPACK (Mishra &amp; Koehler)</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Canales &amp; Comunicación</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" href="#">TikTok: @DigitalizandoT_edu</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">Instagram: @digitalizandot.pedagogia</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">X/Twitter: @DigitalizandoT</a></li><li class=""><a class="hover:text-secondary transition-colors" href="#">consultoria@digitalizandot.edu</a></li></ul><div class="pt-space-xs"><span class="inline-block px-space-sm py-space-xs rounded bg-surface-container font-badge-code text-badge-code text-on-surface uppercase">Proyecto Académico 2026-2027</span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><p class="">© 2026-2027 DigitalizándoT. Asignatura Tecnología Educativa · Trabajo Académico de Consultoría.</p><div class="flex items-center gap-space-md"><span class="text-on-surface font-medium">María Raya · Alba Montes · Carmen Ocaña</span></div></div></div></footer>
 
 
+
+<!-- MODAL: ANUNCIO -->
+<div id="anuncio-modal" class="fixed inset-0 z-[110] hidden items-center justify-center bg-[#0b1c30]/90 p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="anuncio-title">
+  <div class="relative flex w-full max-w-5xl flex-col overflow-hidden rounded-xl border border-[#f1d5d8] bg-[#10243d] shadow-2xl">
+    <div class="flex items-center justify-between gap-4 border-b border-[#f1d5d8]/30 px-4 py-3 sm:px-6">
+      <h2 id="anuncio-title" class="font-headline-md text-headline-md font-bold text-white">Anuncio · DigitalizándoT</h2>
+      <button id="close-anuncio" type="button" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white transition-colors hover:bg-white/15" aria-label="Cerrar anuncio">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <video id="anuncio-video" class="block max-h-[78vh] w-full bg-black object-contain" controls playsinline preload="metadata" aria-label="Vídeo anuncio de DigitalizándoT">
+      <source src="./Anuncio_DigitalizándoT.mp4" type="video/mp4">
+      Tu navegador no puede reproducir este vídeo. Comprueba que el archivo ./Anuncio_DigitalizándoT.mp4 está en la misma carpeta que este HTML.
+    </video>
+  </div>
+</div>
+
+<!-- MODAL: PODCAST -->
+<div id="podcast-modal" class="fixed inset-0 z-[120] hidden items-center justify-center bg-[#0b1c30]/90 p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="podcast-title">
+  <div class="relative w-full max-w-xl overflow-hidden rounded-xl border border-[#f1d5d8] bg-[#10243d] p-5 shadow-2xl sm:p-7">
+    <div class="mb-5 flex items-center justify-between gap-4">
+      <div>
+        <h2 id="podcast-title" class="font-headline-md text-headline-md font-bold text-white">Podcast · DigitalizándoT</h2>
+        <p class="mt-1 text-sm text-white/75">Escucha nuestro podcast</p>
+      </div>
+      <button id="close-podcast" type="button" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white transition-colors hover:bg-white/15" aria-label="Cerrar reproductor">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <audio id="podcast-audio" class="w-full" controls preload="metadata">
+      <source src=".\PODCAST_BUENO_DIGITALIZANDOT.m4a" type="audio/mp4">
+      Tu navegador no puede reproducir este audio. Comprueba que PODCAST_BUENO_DIGITALIZANDOT.m4a está en la misma carpeta que este HTML.
+    </audio>
+  </div>
+</div>
+
 <!-- MODAL: INFOGRAFÍA -->
 <div id="infografia-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-[#0f2b46]/80 p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="infografia-title">
   <div class="relative flex h-full max-h-[95vh] w-full max-w-5xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl">
@@ -508,6 +551,77 @@
 </div>
 
 <script>
+
+(() => {
+  const modal = document.getElementById('anuncio-modal');
+  const openButton = document.getElementById('open-anuncio');
+  const closeButton = document.getElementById('close-anuncio');
+  const video = document.getElementById('anuncio-video');
+  if (!modal || !openButton || !closeButton || !video) return;
+
+  let previouslyFocused = null;
+  function openModal() {
+    previouslyFocused = document.activeElement;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
+    const playAttempt = video.play();
+    if (playAttempt && typeof playAttempt.catch === 'function') playAttempt.catch(() => {});
+  }
+  function closeModal() {
+    video.pause();
+    video.currentTime = 0;
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+    if (previouslyFocused) previouslyFocused.focus();
+  }
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+  });
+})();
+
+(() => {
+  const modal = document.getElementById('podcast-modal');
+  const openButton = document.getElementById('open-podcast');
+  const closeButton = document.getElementById('close-podcast');
+  const audio = document.getElementById('podcast-audio');
+  if (!modal || !openButton || !closeButton || !audio) return;
+
+  let previouslyFocused = null;
+  function openModal() {
+    previouslyFocused = document.activeElement;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
+    const playAttempt = audio.play();
+    if (playAttempt && typeof playAttempt.catch === 'function') playAttempt.catch(() => {});
+  }
+  function closeModal() {
+    audio.pause();
+    audio.currentTime = 0;
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+    if (previouslyFocused) previouslyFocused.focus();
+  }
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+  });
+})();
+
 (() => {
   const modal = document.getElementById('infografia-modal');
   const openButton = document.getElementById('open-infografia');
