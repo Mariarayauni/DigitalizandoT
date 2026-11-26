@@ -7,12 +7,47 @@
   font-weight: 700 !important;
 }
 </style>
-</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" style="background-color: rgba(253, 246, 247, 0.92); border-bottom: 1px solid rgb(241, 213, 216);"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-shrink-0"><a class="flex items-center gap-space-sm" data-path="inicio-identidad" href="./index.html"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBznAT7BRiyzHmURW_OplzZrouKEAJ4NTcMEXSyskMFb8Em8W84-0r7SN48wiAhMx_BujvZAmIi-aG-to8ec9cUcFkCe9dDqQAvnYZ6jW8lFwBbgCxwd1A_yCNy9LWxrc7i_QOcO99CeyBlouh2CD5qjhKWCVXfaXnKt2Oc-t_8GIk8JQp6TULnvd_PG3TaSUS9yBbb5cRCFwhhLpRsIsGDe1HvZZLfPHxvpjvIyAx9Dpco9qKNRJ4UB0esSOn-lyw8QA" class="h-10 sm:h-12 w-auto object-contain rounded-md" alt="DigitalizándoT"></a><div class="hidden xl:flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface" style="background-color: rgb(249, 213, 216); color: rgb(16, 36, 61); border: 1px solid rgb(241, 188, 194);"><span class="font-badge-code text-badge-code uppercase tracking-wider text-on-surface">Tecnología Educativa · 2.º Pedagogía (2026-2027)</span></div></div><nav class="hidden lg:flex items-center gap-space-xs site-nav" aria-label="Navegación principal">
+<style>
+/* HEADER CENTRADO Y RESPONSIVE: mismo diseño que index.html */
+.site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 50; width: 100%; }
+.site-header .site-header-inner { width: 100%; max-width: 1680px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; align-items: center; gap: 16px; }
+.header-brand { display: flex; align-items: center; justify-content: flex-start; min-width: 0; }
+.header-navigation { align-items: center; justify-content: center; gap: 6px; }
+.header-actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+.header-navigation a { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; text-align: center; white-space: nowrap; }
+.header-actions button { align-items: center; justify-content: center; min-height: 42px; text-align: center; white-space: nowrap; }
+.header-profile { flex-shrink: 0; }
+@media (min-width: 1536px) {
+ .site-header .site-header-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); height: 80px; }
+ .header-brand { grid-column: 1; justify-self: start; }
+ .header-navigation { display: flex; grid-column: 2; justify-self: center; }
+ .header-actions { grid-column: 3; justify-self: end; }
+}
+@media (min-width: 1024px) and (max-width: 1535px) {
+ .site-header .site-header-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: 42px 42px; height: 112px; padding-top: 10px; padding-bottom: 10px; column-gap: 16px; row-gap: 8px; }
+ .header-brand { grid-column: 1; grid-row: 1; justify-self: start; }
+ .header-actions { grid-column: 2; grid-row: 1; justify-self: end; }
+ .header-navigation { display: flex; grid-column: 1 / -1; grid-row: 2; justify-self: center; justify-content: center; gap: 12px; }
+ main { padding-top: 112px !important; }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+ .site-header .site-header-inner { display: flex; justify-content: space-between; height: 80px; padding-left: 20px; padding-right: 20px; }
+ .header-navigation, .header-academic-badge { display: none; }
+}
+@media (max-width: 639px) {
+ .site-header .site-header-inner { display: flex; justify-content: space-between; height: 80px; padding-left: 12px; padding-right: 12px; gap: 8px; }
+ .header-navigation, .header-academic-badge, .header-download { display: none; }
+ .header-actions { gap: 6px; }
+ #open-contact-centros { padding-left: 12px; padding-right: 12px; font-size: 12px; }
+ .header-profile { margin-left: 0; }
+}
+</style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="site-header bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" style="background-color: rgba(253, 246, 247, 0.92); border-bottom: 1px solid rgb(241, 213, 216);"><div class="site-header-inner h-20 flex items-center justify-between"><div class="header-brand flex items-center gap-space-md"><a class="flex items-center gap-space-sm shrink-0" data-path="inicio-identidad" href="./index.html"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBznAT7BRiyzHmURW_OplzZrouKEAJ4NTcMEXSyskMFb8Em8W84-0r7SN48wiAhMx_BujvZAmIi-aG-to8ec9cUcFkCe9dDqQAvnYZ6jW8lFwBbgCxwd1A_yCNy9LWxrc7i_QOcO99CeyBlouh2CD5qjhKWCVXfaXnKt2Oc-t_8GIk8JQp6TULnvd_PG3TaSUS9yBbb5cRCFwhhLpRsIsGDe1HvZZLfPHxvpjvIyAx9Dpco9qKNRJ4UB0esSOn-lyw8QA" class="h-10 sm:h-12 w-auto object-contain rounded-md" alt="DigitalizándoT"></a><div class="header-academic-badge hidden xl:flex items-center px-space-sm py-space-xs rounded-full bg-surface-container-high text-on-surface" style="background-color: rgb(249, 213, 216); color: rgb(16, 36, 61); border: 1px solid rgb(241, 188, 194);"><span class="font-badge-code text-badge-code uppercase tracking-wider text-on-surface">Tecnología Educativa · 2.º Pedagogía (2026-2027)</span></div></div><nav class="header-navigation hidden lg:flex items-center site-nav" aria-label="Navegación principal">
 <a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors whitespace-nowrap" data-path="inicio-identidad" href="./index.html">Inicio &amp; Identidad</a>
 <a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors whitespace-nowrap" data-path="justificacion-dafo" href="./dafo.html">Justificación &amp; DAFO</a>
 <a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors whitespace-nowrap" data-path="mision-objetivos" href="./mision.html">Misión &amp; Objetivos</a>
-<a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors whitespace-nowrap" data-path="servicios-ia" href="./ia.html">Servicios &amp; IA</a>
-</nav><div class="flex items-center gap-space-sm flex-shrink-0"><button class="hidden sm:inline-flex items-center justify-center px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest hover:text-on-surface transition-all whitespace-nowrap shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button" style="background-color: rgb(252, 231, 235); color: rgb(16, 36, 61); border: 1px solid rgb(241, 213, 216);">Descargar Memoria Fase 1 (PDF)</button><button class="inline-flex items-center justify-center px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all whitespace-nowrap shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button" style="background-color: rgb(212, 123, 129); color: rgb(255, 255, 255); border: 1px solid rgb(200, 105, 112);">Contacto Centros</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1" style="background-color: rgb(16, 36, 61);"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<a class="px-3 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors whitespace-nowrap is-active" data-path="servicios-ia" href="./ia.html">Servicios &amp; IA</a>
+</nav><div class="header-actions"><button class="header-download hidden sm:inline-flex items-center justify-center px-space-md py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest hover:text-on-surface transition-all whitespace-nowrap shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button" style="background-color: rgb(252, 231, 235); color: rgb(16, 36, 61); border: 1px solid rgb(241, 213, 216);">Descargar Memoria Fase 1 (PDF)</button><button id="open-contact-centros" aria-haspopup="dialog" aria-controls="contact-centros-modal" class="inline-flex items-center justify-center px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all whitespace-nowrap shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button" style="background-color: rgb(212, 123, 129); color: rgb(255, 255, 255); border: 1px solid rgb(200, 105, 112);">Contacto Centros</button><div class="header-profile w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1" style="background-color: rgb(16, 36, 61);"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
 <div class="relative w-full overflow-hidden bg-surface-container-low py-space-xl">
 <div class="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-surface-container-high/60 blur-3xl pointer-events-none"></div>
 <div class="absolute -left-20 bottom-0 h-80 w-80 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
@@ -927,4 +962,130 @@
   window.addEventListener('pageshow', updateActiveNavigation);
 })();
 </script>
+<!-- MODAL: TARJETA CONTACTO CENTROS -->
+<div id="contact-centros-modal" class="fixed inset-0 z-[130] hidden items-center justify-center bg-[#0b1c30]/90 p-3 sm:p-6" role="dialog" aria-modal="true" aria-labelledby="contact-centros-title">
+  <div class="relative flex max-h-[95vh] w-full max-w-4xl flex-col items-center rounded-2xl border border-[#f1d5d8] bg-[#fdf6f7] p-4 shadow-2xl sm:p-6">
+    <div class="mb-4 flex w-full items-center justify-between gap-4">
+      <div class="flex min-w-0 items-center gap-3">
+        <h2 id="contact-centros-title" class="font-headline-md text-headline-md font-bold text-[#10243d]">Contacto Centros</h2>
+        <a href="https://www.instagram.com/digitalizaandot?lqvp=MTZmdzNwaWNqb3B6Zw==" target="_blank" rel="noopener noreferrer" class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition-transform duration-200 hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d47b81]" aria-label="Visitar Instagram de DigitalizándoT (abre en una nueva pestaña)" title="Instagram de DigitalizándoT">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" aria-hidden="true" focusable="false">
+            <defs>
+              <radialGradient id="contact-instagram-gradient" cx="25%" cy="100%" r="110%">
+                <stop offset="0%" stop-color="#FFDC80"/>
+                <stop offset="22%" stop-color="#FCAF45"/>
+                <stop offset="48%" stop-color="#F56040"/>
+                <stop offset="72%" stop-color="#E1306C"/>
+                <stop offset="100%" stop-color="#833AB4"/>
+              </radialGradient>
+            </defs>
+            <rect width="48" height="48" rx="12" fill="url(#contact-instagram-gradient)"/>
+            <rect x="10" y="10" width="28" height="28" rx="8" fill="none" stroke="#fff" stroke-width="3"/>
+            <circle cx="24" cy="24" r="6.5" fill="none" stroke="#fff" stroke-width="3"/>
+            <circle cx="33" cy="15" r="2" fill="#fff"/>
+          </svg>
+        </a>
+      </div>
+      <button id="close-contact-centros" type="button" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-[#10243d] transition-colors hover:bg-[#f9d5d8]" aria-label="Cerrar tarjeta">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
+    </div>
+    <div class="flex w-full items-center justify-center gap-2 sm:gap-5">
+      <button id="flip-card-left" type="button" class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#10243d] text-white shadow-lg transition hover:bg-[#263f5b] focus:outline-none focus:ring-4 focus:ring-[#d47b81]/50" aria-label="Girar tarjeta hacia la izquierda">
+        <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+      </button>
+      <div class="contact-card-scene">
+        <div id="contact-card" class="contact-card">
+          <div class="contact-card-face contact-card-front">
+            <img src=".\Tarjeta_alante.png" alt="Parte delantera de la tarjeta de contacto" />
+          </div>
+          <div class="contact-card-face contact-card-back">
+            <img src=".\Tarjeta_atras.png" alt="Parte trasera de la tarjeta de contacto" />
+          </div>
+        </div>
+      </div>
+      <button id="flip-card-right" type="button" class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#10243d] text-white shadow-lg transition hover:bg-[#263f5b] focus:outline-none focus:ring-4 focus:ring-[#d47b81]/50" aria-label="Girar tarjeta hacia la derecha">
+        <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+      </button>
+    </div>
+    <p class="mt-4 text-center text-sm text-[#45464d]">Utiliza las flechas para girar la tarjeta y ver el reverso.</p>
+  </div>
+</div>
+<style>
+  .contact-card-scene { width: min( min(68vw, 760px), 100%); aspect-ratio: 1.586 / 1; perspective: 2400px; }
+  .contact-card { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform 360ms ease-in-out; }
+  .contact-card.turn-left { transform: rotateY(-180deg); }
+  .contact-card.turn-right { transform: rotateY(180deg); }
+  .contact-card-face { position: absolute; inset: 0; overflow: hidden; border-radius: 14px; backface-visibility: hidden; -webkit-backface-visibility: hidden; box-shadow: 0 8px 20px rgba(11,28,48,.14); }
+  .contact-card-face img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 14px; }
+  .contact-card-back { transform: rotateY(180deg); }
+  @media (max-width: 640px) { .contact-card-scene { width: min(68vw, 560px); } }
+  @media (prefers-reduced-motion: reduce) { .contact-card { transition-duration: 1ms; } }
+</style>
+
+
+<script>
+(() => {
+  const modal = document.getElementById('contact-centros-modal');
+  const openButton = document.getElementById('open-contact-centros');
+  const closeButton = document.getElementById('close-contact-centros');
+  const card = document.getElementById('contact-card');
+  const leftButton = document.getElementById('flip-card-left');
+  const rightButton = document.getElementById('flip-card-right');
+  if (!modal || !openButton || !closeButton || !card || !leftButton || !rightButton) return;
+
+  let previouslyFocused = null;
+  let side = 'front';
+  let lastDirection = 'right';
+
+  function setSide(direction) {
+    if (side === 'front') {
+      // Desde el frontal, la flecha elegida determina hacia qué lado gira al reverso.
+      const rotationDirection = direction || lastDirection;
+      card.classList.remove('turn-left', 'turn-right');
+      void card.offsetWidth;
+      card.classList.add(rotationDirection === 'left' ? 'turn-left' : 'turn-right');
+      side = 'back';
+      lastDirection = rotationDirection;
+    } else {
+      // Desde el reverso, vuelve directamente a 0 grados: una sola media vuelta
+      // hacia el frontal, sin reiniciar la transformación ni dar una vuelta extra.
+      card.classList.remove('turn-left', 'turn-right');
+      side = 'front';
+    }
+  }
+
+  function openModal() {
+    previouslyFocused = document.activeElement;
+    card.classList.remove('turn-left', 'turn-right');
+    side = 'front';
+    lastDirection = 'right';
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
+  }
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+    card.classList.remove('turn-left', 'turn-right');
+    side = 'front';
+    if (previouslyFocused) previouslyFocused.focus();
+  }
+
+  openButton.addEventListener('click', openModal);
+  closeButton.addEventListener('click', closeModal);
+  leftButton.addEventListener('click', () => setSide('left'));
+  rightButton.addEventListener('click', () => setSide('right'));
+  modal.addEventListener('click', (event) => { if (event.target === modal) closeModal(); });
+  document.addEventListener('keydown', (event) => {
+    if (modal.classList.contains('hidden')) return;
+    if (event.key === 'Escape') closeModal();
+    if (event.key === 'ArrowLeft') setSide('left');
+    if (event.key === 'ArrowRight') setSide('right');
+  });
+})();
+</script>
+
 </body></html>
